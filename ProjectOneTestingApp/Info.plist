@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>This app requires you to access your health data</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Your health data will be used for updating health statistics data</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>Your health data will be used for making informed decisions</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

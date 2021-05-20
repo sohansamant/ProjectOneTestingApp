@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B666E3272653E0DA0068AAB5 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666E3262653E0DA0068AAB5 /* HealthStore.swift */; };
+		B666E32A265412AF0068AAB5 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666E329265412AF0068AAB5 /* Step.swift */; };
 		B6A88EF326524C8700743811 /* ProjectOneTestingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A88EF226524C8700743811 /* ProjectOneTestingAppApp.swift */; };
 		B6A88EF526524C8700743811 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A88EF426524C8700743811 /* ContentView.swift */; };
 		B6A88EF726524C8900743811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A88EF626524C8900743811 /* Assets.xcassets */; };
 		B6A88EFA26524C8900743811 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A88EF926524C8900743811 /* Preview Assets.xcassets */; };
 		B6A88F0526524C8A00743811 /* ProjectOneTestingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A88F0426524C8A00743811 /* ProjectOneTestingAppTests.swift */; };
 		B6A88F1026524C8A00743811 /* ProjectOneTestingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A88F0F26524C8A00743811 /* ProjectOneTestingAppUITests.swift */; };
+		B6A88F20265258EE00743811 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A88F1F265258EE00743811 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B666E3262653E0DA0068AAB5 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		B666E329265412AF0068AAB5 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		B6A88EEF26524C8700743811 /* ProjectOneTestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOneTestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A88EF226524C8700743811 /* ProjectOneTestingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOneTestingAppApp.swift; sourceTree = "<group>"; };
 		B6A88EF426524C8700743811 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,8 @@
 		B6A88F0B26524C8A00743811 /* ProjectOneTestingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectOneTestingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A88F0F26524C8A00743811 /* ProjectOneTestingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOneTestingAppUITests.swift; sourceTree = "<group>"; };
 		B6A88F1126524C8A00743811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A88F1D265258EE00743811 /* ProjectOneTestingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectOneTestingApp.entitlements; sourceTree = "<group>"; };
+		B6A88F1F265258EE00743811 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A88F20265258EE00743811 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B666E328265412920068AAB5 /*  Models */ = {
+			isa = PBXGroup;
+			children = (
+				B666E329265412AF0068AAB5 /* Step.swift */,
+			);
+			path = " Models";
+			sourceTree = "<group>";
+		};
 		B6A88EE626524C8700743811 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +95,7 @@
 				B6A88F0326524C8A00743811 /* ProjectOneTestingAppTests */,
 				B6A88F0E26524C8A00743811 /* ProjectOneTestingAppUITests */,
 				B6A88EF026524C8700743811 /* Products */,
+				B6A88F1E265258EE00743811 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +112,14 @@
 		B6A88EF126524C8700743811 /* ProjectOneTestingApp */ = {
 			isa = PBXGroup;
 			children = (
+				B666E328265412920068AAB5 /*  Models */,
+				B6A88F1D265258EE00743811 /* ProjectOneTestingApp.entitlements */,
 				B6A88EF226524C8700743811 /* ProjectOneTestingAppApp.swift */,
 				B6A88EF426524C8700743811 /* ContentView.swift */,
 				B6A88EF626524C8900743811 /* Assets.xcassets */,
 				B6A88EFB26524C8900743811 /* Info.plist */,
 				B6A88EF826524C8900743811 /* Preview Content */,
+				B666E3262653E0DA0068AAB5 /* HealthStore.swift */,
 			);
 			path = ProjectOneTestingApp;
 			sourceTree = "<group>";
@@ -128,6 +148,14 @@
 				B6A88F1126524C8A00743811 /* Info.plist */,
 			);
 			path = ProjectOneTestingAppUITests;
+			sourceTree = "<group>";
+		};
+		B6A88F1E265258EE00743811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A88F1F265258EE00743811 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A88EF526524C8700743811 /* ContentView.swift in Sources */,
+				B666E32A265412AF0068AAB5 /* Step.swift in Sources */,
+				B666E3272653E0DA0068AAB5 /* HealthStore.swift in Sources */,
 				B6A88EF326524C8700743811 /* ProjectOneTestingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectOneTestingApp/ProjectOneTestingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectOneTestingApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 95ULNJYJSQ;
@@ -439,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectOneTestingApp/ProjectOneTestingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectOneTestingApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 95ULNJYJSQ;
