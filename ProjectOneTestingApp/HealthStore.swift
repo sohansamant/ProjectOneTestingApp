@@ -40,6 +40,7 @@ class HealthStore {
         }
     }
     
+    
     /* - Function for calculating steps - */
     
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
